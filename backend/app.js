@@ -54,7 +54,7 @@ app.use((err, req, res, next) => {
   res.status(statusCode).send({ error: err });
 });
 
-const port = 4000;
+const port = process.env.PORT || 4000;
 app.listen(port, () => {
   console.log(`HobbyTracker backend API listening on port ${port}`);
 });
