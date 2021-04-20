@@ -1,0 +1,123 @@
+.App {
+  text-align: center;
+}
+
+html,
+body,
+#root {
+  height: 100%;
+  background-color: white;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.content-wrap {
+  padding-bottom: 2.5rem;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;
+  margin-right: 3;
+  text-align: left;
+}
+
+.hobbyList {
+  text-align: center;
+}
+
+.hobbyCard {
+  cursor: pointer;
+  width: 350px;
+  margin: auto;
+}
+
+.hobbyCard:hover {
+  border-color: black;
+}
+
+.progressionList {
+  text-align: center;
+}
+
+.hobbyDetailsLeft {
+  text-align: left;
+}
+
+.hobbyDetailsRight {
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.hobbyDetailsLeft h4 {
+  text-align: center;
+}
+
+.hobbyDetails {
+  background-color: white;
+  text-align: center;
+  margin: auto;
+}
+
+.progressCard {
+  border: none;
+  text-align: left;
+}
+
+.react-datepicker-wrapper,
+.react-datepicker__input-container,
+.react-datepicker__input-container input {
+  display: block;
+  width: 100%;
+}
+
+.react-datepicker__input-container input {
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition-property: border-color, box-shadow;
+  transition-duration: 0.15s, 0.15s;
+  transition-timing-function: ease-in-out, ease-in-out;
+  transition-delay: 0s, 0s;
+}
+
+.react-datepicker__input-container input:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #86b7fe;
+  outline: 0;
+  box-shadow: 0 0 0 0.25rem rgba(13, 110, 253, 0.25);
+}
+
+.card-container.card {
+  margin: auto;
+  max-width: 350px !important;
+  padding: 40px 40px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
