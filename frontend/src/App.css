@@ -30,7 +30,7 @@ body,
 }
 
 .content-wrap {
-  padding-bottom: 2.5rem;
+  height: 100%;
 }
 
 footer {
@@ -112,6 +112,85 @@ footer {
   max-width: 350px !important;
   padding: 40px 40px;
 }
+
+.btn-home,
+.btn-home:hover {
+  color: #343a40;
+  text-shadow: none;
+}
+
+.welcome {
+  height: 300px;
+  width: 300px;
+  position: absolute;
+  left: 50%;
+  margin-left: -150px;
+  top: 50%;
+  margin-top: -150px;
+  z-index: 10;
+}
+
+.bl {
+  z-index: 1;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 50%;
+  width: 50%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.unsplash.com/photo-1525201548942-d8732f6617a0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.tr {
+  z-index: 1;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  height: 50%;
+  width: 50%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.unsplash.com/photo-1507048331197-7d4ac70811cf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1267&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.tl {
+  z-index: 1;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  height: 50%;
+  width: 50%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.unsplash.com/photo-1522163182402-834f871fd851?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1293&q=80");
+  background-size: cover;
+  background-position: center;
+}
+
+.br {
+  z-index: 1;
+  position: absolute;
+  bottom: 0px;
+  right: 0px;
+  height: 50%;
+  width: 50%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.unsplash.com/photo-1461344577544-4e5dc9487184?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80");
+  background-size: cover;
+  background-position: center;
+}
+/* .home img {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("https://images.unsplash.com/photo-1559521783-1d1599583485?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80");
+  background-size: cover;
+  background-position: center;
+  text-shadow: 0 0.05rem 0.1rem rgba(0, 0, 0, 0.5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, 0.5);
+} */
 
 @keyframes App-logo-spin {
   from {

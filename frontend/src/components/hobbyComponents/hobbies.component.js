@@ -18,7 +18,7 @@ export default function Hobbies(props) {
   }
 
   return (
-    <div className="hobbyList">
+    <div className="container mt-3 hobbyList">
       {/* Initially display the HobbyList Component*/}
       {!detailsFlag && <HobbyList onClickHobby={onClickHobbyDetails} />}
       {/* If a hobby is selected, load the HobbyDetails component*/}

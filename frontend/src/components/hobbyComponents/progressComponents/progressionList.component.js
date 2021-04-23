@@ -5,7 +5,7 @@ import Progress from "./progress.component";
 export default function ProgressionList(props) {
   function progressionToList() {
     if (!props.progression || props?.progression.length === 0) {
-      return <p>You have no progression yet for this hobby.</p>;
+      return <p>You have no progression for this hobby yet.</p>;
     }
     //Sort progression from most recent to least recent
     var progressionSorted = props.progression.sort(

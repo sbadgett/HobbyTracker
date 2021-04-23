@@ -51,7 +51,7 @@ function App() {
           <div className="navbar-nav ml-auto">
             <li className="nav-item">
               <a href="/login" className="nav-link" onClick={logOut}>
-                LogOut
+                Log Out
               </a>
             </li>
           </div>
@@ -73,7 +73,7 @@ function App() {
       {/* End of header */}
 
       {/* Main content determined by Route switch */}
-      <div className="container mt-3 content-wrap">
+      <div className="content-wrap">
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/login" component={Login} />

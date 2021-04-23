@@ -50,7 +50,13 @@ export default function HobbyList(props) {
       ));
     } else {
       /* User has no hobbies*/
-      return <h5>You have no hobbies to show.</h5>;
+      return (
+        <h5 className="mt-3">
+          You have no hobbies to display!
+          <br />
+          Use the navigation bar to add a new one.
+        </h5>
+      );
     }
   }
 

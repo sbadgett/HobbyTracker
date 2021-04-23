@@ -103,76 +103,78 @@ export default class CreateHobby extends Component {
 
   render() {
     return (
-      <div className="row">
-        <div className="col-md-6 offset-md-3">
-          <div className="mb-3">
-            <h3>Create New Hobby</h3>
-            <Form
-              onSubmit={this.handleCreateHobby}
-              ref={(c) => {
-                this.form = c;
-              }}
-            >
-              <div className="form-group">
-                <label htmlFor="name">Hobby Name</label>
-                <Input
-                  type="text"
-                  className="form-control"
-                  name="name"
-                  value={this.state.name}
-                  onChange={this.onChangeName}
-                  validations={[required]}
-                />
-              </div>
-
-              <div className="form-group">
-                <label htmlFor="password">Goal</label>
-                <Input
-                  type="text"
-                  className="form-control"
-                  name="goal"
-                  value={this.state.goal}
-                  onChange={this.onChangeGoal}
-                  validations={[required]}
-                />
-              </div>
-
-              <div className="form-group">
-                <label htmlFor="password">Image URL (Decorative)</label>
-                <Input
-                  type="text"
-                  className="form-control"
-                  name="imgurl"
-                  value={this.state.imgurl}
-                  onChange={this.onChangeImgURL}
-                />
-              </div>
-
-              <div className="form-group">
-                <button
-                  className="btn btn-outline-primary btn-block"
-                  disabled={this.state.loading}
-                >
-                  {this.state.loading && (
-                    <span className="spinner-border spinner-border-sm"></span>
-                  )}
-                  <span>Create Hobby</span>
-                </button>
-              </div>
-              {this.state.message && (
-                <div className="form-group">
-                  <div className="alert alert-danger" role="alert">
-                    {this.state.message}
-                  </div>
-                </div>
-              )}
-              <CheckButton
-                style={{ display: "none" }}
+      <div className="container mt-3">
+        <div className="row">
+          <div className="col-md-6 offset-md-3">
+            <div className="mb-3">
+              <h3>Create New Hobby</h3>
+              <Form
+                onSubmit={this.handleCreateHobby}
                 ref={(c) => {
-                  this.checkBtn = c;
+                  this.form = c;
                 }}
-              />
-            </Form>
+              >
+                <div className="form-group">
+                  <label htmlFor="name">Hobby Name</label>
+                  <Input
+                    type="text"
+                    className="form-control"
+                    name="name"
+                    value={this.state.name}
+                    onChange={this.onChangeName}
+                    validations={[required]}
+                  />
+                </div>
+
+                <div className="form-group">
+                  <label htmlFor="password">Goal</label>
+                  <Input
+                    type="text"
+                    className="form-control"
+                    name="goal"
+                    value={this.state.goal}
+                    onChange={this.onChangeGoal}
+                    validations={[required]}
+                  />
+                </div>
+
+                <div className="form-group">
+                  <label htmlFor="password">Image URL (Decorative)</label>
+                  <Input
+                    type="text"
+                    className="form-control"
+                    name="imgurl"
+                    value={this.state.imgurl}
+                    onChange={this.onChangeImgURL}
+                  />
+                </div>
+
+                <div className="form-group">
+                  <button
+                    className="btn btn-outline-primary btn-block"
+                    disabled={this.state.loading}
+                  >
+                    {this.state.loading && (
+                      <span className="spinner-border spinner-border-sm"></span>
+                    )}
+                    <span>Create Hobby</span>
+                  </button>
+                </div>
+                {this.state.message && (
+                  <div className="form-group">
+                    <div className="alert alert-danger" role="alert">
+                      {this.state.message}
+                    </div>
+                  </div>
+                )}
+                <CheckButton
+                  style={{ display: "none" }}
+                  ref={(c) => {
+                    this.checkBtn = c;
+                  }}
+                />
+              </Form>
+            </div>
           </div>
         </div>
       </div>
